@@ -58,7 +58,6 @@ namespace Azure.Search.Sample
             }
 
             // Find trip with a duration less then 18 days
-
             var parameters = new SearchParameters()
             {
                 Filter = "duration lt 18"
@@ -69,8 +68,6 @@ namespace Azure.Search.Sample
             {
                 Console.WriteLine("Result: " + trip.Document.Name + " Duration: " + trip.Document.Duration);
             }
-
-
 
             Console.WriteLine("- End, press any key to close -");
             Console.ReadLine();
